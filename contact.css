@@ -1,0 +1,104 @@
+#contact{
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    color: #003366;
+}
+   .contact-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        @media (min-width: 768px) {
+            .contact-container {
+                flex-direction: row;
+            }
+        }
+        .contact-left, .contact-right {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        .contact-left {
+            background-color: #E0F7FA;
+            align-items: center;
+            text-align: center;
+        }
+        .contact-left img {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .contact-left h2 {
+            color: #006666;
+            margin-bottom: 20px;
+        }
+        .contact-left .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .contact-left .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #006666;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+        .contact-left .social-icons a:hover {
+            background-color: #004d4d;
+        }
+        .contact-right {
+            background-color: #006666;
+            color: #ffffff;
+        }
+        .contact-right h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .contact-right form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .contact-right input, .contact-right textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #E0F7FA;
+            color: #006666;
+            resize: none;
+        }
+        .contact-right input::placeholder, .contact-right textarea::placeholder {
+            color: #006666;
+        }
+        .contact-right input[type="submit"] {
+            background-color: #E0F7FA;
+            color: #006666;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .contact-right input[type="submit"]:hover {
+            background-color: #b2ebf2;
+        }

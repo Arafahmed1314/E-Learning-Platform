@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        @media (min-width: 768px) {
+            .contact-container {
+                flex-direction: row;
+            }
+        }
+        .contact-left, .contact-right {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        .contact-left {
+            background-color: #ffffff;
+            color: #001f3f;
+            align-items: center;
+            text-align: center;
+        }
+        .contact-left img {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .contact-left h2 {
+            margin-bottom: 20px;
+        }
+        .contact-left .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .contact-left .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #001f3f;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+        .contact-left .social-icons a:hover {
+            background-color: #001940;
+        }
+        .contact-right {
+            background-color: #082441;
+            color: #ffffff;
+        }
+        .contact-right h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-right form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .contact-right input, .contact-right textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            color: #001f3f;
+        }
+        .contact-right input::placeholder, .contact-right textarea::placeholder {
+            color: #001f3f;
+        }
+        .contact-right input[type="submit"] {
+            background-color: #ffffff;
+            color: #001f3f;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .contact-right input[type="submit"]:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="contact-container">
+            <div class="contact-left">
+                <img src="https://via.placeholder.com/300" alt="Contact Image">
+                <h2>Let's Get In Touch</h2>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img
+                            src="https://via.placeholder.com/40"
+                            alt="Facebook"></a>
+                    <a href="#" target="_blank"><img
+                            src="https://via.placeholder.com/40"
+                            alt="Twitter"></a>
+                    <a href="#" target="_blank"><img
+                            src="https://via.placeholder.com/40"
+                            alt="YouTube"></a>
+                    <a href="#" target="_blank"><img
+                            src="https://via.placeholder.com/40"
+                            alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h3>Contact Us</h3>
+                <form action="#">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email"
+                        required>
+                    <input type="tel" name="phone" placeholder="Phone" required>
+                    <textarea name="message" rows="4" placeholder="Message"
+                        required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
