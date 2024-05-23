@@ -1,17 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide("#course-slider", {
-    type: "loop",
-    perPage: 3,
-    autoplay: true,
-    breakpoints: {
-      1024: {
-        perPage: 2,
-      },
-      768: {
-        perPage: 1,
-      },
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-  }).mount();
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
 });
 const navbarMenu = document.querySelector(".navbar .links");
 const hamburgerBtn = document.querySelector(".hamburger-btn");
