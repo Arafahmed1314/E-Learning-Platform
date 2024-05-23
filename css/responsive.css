@@ -1,0 +1,155 @@
+@media (max-width: 926px) {
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+    }
+
+    .navbar {
+        padding: 15px 0;
+    }
+
+    .navbar .logo img {
+        display: none;
+    }
+
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        left: -100%;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        transition: 0.2s ease;
+    }
+
+    .navbar .links.show-menu {
+        left: 0;
+    }
+
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .navbar .links a:hover {
+        color: #00BCD4;
+    }
+
+    .navbar .login-btn {
+        font-size: 0.9rem;
+        padding: 7px 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .form-popup {
+        width: 95%;
+    }
+
+    .form-box .form-details {
+        display: none;
+    }
+
+    .form-box .form-content {
+        padding: 30px 20px;
+    }
+
+    .links>.dropdown {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 926px) and (max-width:1183px) {
+
+    .logo h2,
+    .nav-search i {
+        display: none;
+    }
+
+    .container img {
+        max-width: 55vw;
+    }
+
+    .main>section>.container {
+        padding: 6vh 1vw;
+        gap: 2.2vw;
+    }
+
+    .banner-inner {
+        padding: 0 0;
+    }
+    .banner-inner>h1 {
+        font-size: 1.6rem;
+        text-align: justify;
+    
+    }
+    .banner-inner>button{
+        justify-content: right;
+    }
+    .splide__slide{
+          flex-shrink:initial;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .feedback-main-container>.feedback-container > .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .overview-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+@media (min-width: 1024px) {
+    .feedback-main-container>.feedback-container > .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .overview-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .instructor-section {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .instructor-image,
+    .instructor-text {
+      width: 50%;
+    }
+  
+    .instructor-text {
+      padding-left: 2rem;
+      margin-top: 0;
+    }
+  }
+  
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+@media (min-width: 768px) {
+    .banner-image {
+        margin-top: 0;
+        flex: 1;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Section with Raw CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            background-color: #f3f4f6;
+            /* Equivalent to Tailwind's bg-gray-100 */
+            padding: 3rem 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+        }
+
+        .banner-inner {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .banner-inner h1 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .banner-inner p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            background-color: #2d3748;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #4a5568;
+            /* Equivalent to Tailwind's hover:bg-gray-700 */
+        }
+
+        .btn i {
+            margin-left: 0.5rem;
+        }
+
+        .banner-image {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .banner-image {
+                margin-top: 0;
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <section class="banner">
+            <div class="container">
+                <div class="banner-inner">
+                    <h1>No application needed, ever―just start learning and show us you’re ready</h1>
+                    <p>You need to get a house when you go to campus, you have to pay for food. If you do it online, you
+                        can do it from your home. I was able to complete the degree while working full-time as a game
+                        designer.</p>
+                    <button class="btn">
+                        Get Started<i class="bx bx-right-arrow-alt"></i>
+                    </button>
+                </div>
+                <img class="banner-image"
+                    src="https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Illustration">
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
