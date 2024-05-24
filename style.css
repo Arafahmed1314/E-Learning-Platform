@@ -551,53 +551,99 @@ body.dark-theme .nav-input[type="text"] {
 
 /* overview section start here  */
 #overview {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10vh 0;
-  /* height: 100vh; */
-}
+    padding: 20px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+  }
 
-.overview-container h1 {
-  font-size: 2.2rem;
-  text-align: center;
-  padding-bottom: 2rem;
-}
+  .overview-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.overview-inner-container {
-  width: 75%;
-  margin: 0 auto;
-}
+  .overview-container h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+    text-transform: capitalize;
+  }
 
-.overview-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
+  .overview-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 15px auto;
+    margin-bottom: 30px;
+  }
 
-.overview-card {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+  .overview-inner-container {
+    width: 100%;
+  }
 
-.overview_first_para {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  line-height: 22px;
-  font-size: 18px;
-}
+  .overview-wrapper {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
 
-.overview-card p {
-  margin: 10px auto;
-  line-height: 22px;
-  font-size: 17px;
-}
+  .overview-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .overview-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .overview-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .overview-desc p:first-child {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  .overview-desc p:last-child {
+    color: #666;
+  }
+
+  /* Media Queries */
+  @media (min-width: 600px) and (max-width: 899px) {
+    .overview-wrapper {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+  }
+
+  @media (min-width: 900px) {
+    .overview-wrapper {
+      grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    }
+
+    .overview-container p {
+      width: 70%;
+    }
+  }
+
 
 .login-btn {
   display: none;
