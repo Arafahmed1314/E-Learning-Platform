@@ -609,94 +609,149 @@ body.dark-theme .nav-input[type="text"] {
 
 /* slide style  */
 
-.slider-title {
-  text-align: center;
-  font-size: 34px;
-  margin-top: 20px;
-  color: #333;
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "K2D", sans-serif;
 }
+#courses{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: grey; */
+    padding: 40px ;
+}
+.slide-content{
+    margin: 0 40px;
+    /* padding: 45px 20px; */
+    overflow: hidden;
+    border-radius: 25px;
 
-#course-slider {
-  margin: 20px auto;
-  max-width: 1200px;
-  padding: 20px;
-  border-radius: 10px;
 }
+.swiper-slide{
+    /* width: 320px; */
+    border-radius: 25px;
+    background-color: #fff;
+}
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    /* border-radius: 25px 25px 0 25px; */
+    padding: 25px 0;
 
-.course-container {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease-in-out;
-  height: 400px;
-  width: 300px;
-  margin: 3vw;
 }
+.overlay{
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,.overlay::after{
+content: '';
+position: absolute;
+right: 0;
+bottom: -40px;
+height: 40px;
+width: 40px;
+/* border-radius: 50%; */
+background-color: #4070f4;
 
-.course-container:hover {
-  transform: translateY(-10px);
 }
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
 
-.course-container img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
 }
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
 
-.course-details {
-  padding: 15px;
 }
+.description{
+    font-size:14px ;
+    color: #707070;
+    text-align: center;
 
-.course-details h3 {
-  margin: 0;
-  font-size: 18px;
-  color: #0073e6;
 }
+.button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.button:hover{
+    background-color: #265df2;
 
-.course-details h4 {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #555;
 }
-
-.course-details p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #666;
+.swiper-navBtn{
+    color: #6e93f7;
+    transition: color 0.3s ease;
 }
-
-.splide__arrow {
-  background: #0073e6;
-  border-radius: 50%;
+.swiper-navBtnP:hover{
+    color: #4070f4;
 }
-
-.splide__arrow svg {
-  fill: #fff4f4;
+.swiper-navBtn::before,.swiper-navBtn::after{
+    font-size: 40px;
 }
-.splide__pagination__page.is-active {
-  background: #0073e6;
+.swiper-button-next{
+    right: 0;
 }
-.course-silde {
-  background: #f4f4f4;
-  height: 90vh;
-  padding-top: 9vh;
+.swiper-button-prev{
+    left: 0;
 }
-
-.splide__list {
-  height: auto;
+.swiper-pagination-bullet{
+    background-color: #6e93f7;
+    opacity: 1;
 }
-.dark-mode {
-  background-color: #1e293b;
-  color: #eef4fc;
+.swiper-pagination-bullet-active{
+    background-color: #6e93f7;
+    opacity: 1;
 }
 
 /* feedback-msg-container */
 .feedback-main-container {
   background-color: #f3f4f6;
   font-family: Arial, sans-serif;
+  padding-top: 20px;
 }
 .feedback-main-container > .feedback-container {
   max-width: 72rem;
