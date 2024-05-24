@@ -167,7 +167,14 @@ if ($result->num_rows > 0) {
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        const themeToggle = document.querySelector(".theme-toggle");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 
 </html>

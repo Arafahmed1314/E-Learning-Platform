@@ -7,15 +7,15 @@ body {
 
 .dark-mode {
 
-    background-color: #1e293b;
-    color: #ffffff;
 
 
+    background-color: #ffffff;
+    color: #1e293b;
 }
 
 .light-mode {
-    background-color: #ffffff;
-    color: #1e293b;
+    background-color: #1e293b;
+    color: #ffffff;
 }
 
 .container {
