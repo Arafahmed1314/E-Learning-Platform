@@ -115,12 +115,13 @@ if ($_GET['pass'] == 1) {
                         </svg>
                     </li>
                     <div class="dropdown-content">
-                        <a href="#">Data Structure</a>
-                        <a href="#">C program</a>
-                        <a href="#">Algorithms</a>
-                        <a href="#">Web Program</a>
-                        <a href="#">Mathematics</a>
-                        <a href="#">Computer Arch</a>
+                        <a href="https://www.w3schools.com/dsa/dsa_intro.php" target="_blank">Data Structure</a>
+                        <a href="https://www.w3schools.com/c/" target="_blank">C program</a>
+                        <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/"
+                            target="_blank">Algorithms</a>
+                        <a href="https://www.w3schools.com/whatis/" target="_blank">Web Programming</a>
+                        <a href="https://youtu.be/qVY9WG6Zvlg?si=FO8KhXhLgUFRPQjx" target="_blank">Mathematics</a>
+                        <a href="https://youtu.be/L9X7XXfHYdU?si=7W5evXgLdtUUWkTb" target="_blank">Computer Arch</a>
                     </div>
                 </div>
                 <li><a href="#course">Courses</a></li>
@@ -315,10 +316,8 @@ if ($_GET['pass'] == 1) {
                         </div>
                         <div class="card-content">
                             <h2 class="name">CSE</h2>
-                            <p class="description">Lorem ipsum dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. A, pariatur.</p>
+                            <p class="description">The CSE course provides comprehensive content and hands-on projects
+                                that enhance coding skills effectively</p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -331,10 +330,8 @@ if ($_GET['pass'] == 1) {
                         </div>
                         <div class="card-content">
                             <h2 class="name">ALGORITHM</h2>
-                            <p class="description">Lorem ipsum dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. A, pariatur.</p>
+                            <p class="description">"The Algorithm course brilliantly simplifies complex concepts with
+                                clear explanations and practical examples."</p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -347,10 +344,8 @@ if ($_GET['pass'] == 1) {
                         </div>
                         <div class="card-content">
                             <h2 class="name">CHEMISTRY</h2>
-                            <p class="description">Lorem ipsum dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. A, pariatur.</p>
+                            <p class="description">The Chemistry course on this e-learning platform makes complex
+                                concepts easy to understand with clear lessons and practical examples.</p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -363,10 +358,8 @@ if ($_GET['pass'] == 1) {
                         </div>
                         <div class="card-content">
                             <h2 class="name">ENGLISH</h2>
-                            <p class="description">Lorem ipsum dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. A, pariatur.</p>
+                            <p class="description">"The English course provides excellent lessons and interactive
+                                activities that significantly improve language skills."</p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -379,10 +372,8 @@ if ($_GET['pass'] == 1) {
                         </div>
                         <div class="card-content">
                             <h2 class="name">PHYSICS</h2>
-                            <p class="description">Lorem ipsum dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. A, pariatur.</p>
+                            <p class="description">"The Physics course delivers complex concepts in a clear and engaging
+                                manner, making learning both enjoyable and effective."</p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -395,10 +386,8 @@ if ($_GET['pass'] == 1) {
                         </div>
                         <div class="card-content">
                             <h2 class="name">MATH</h2>
-                            <p class="description">Lorem ipsum dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. A, pariatur.</p>
+                            <p class="description">"The Math course offers clear explanations and engaging exercises
+                                that make learning enjoyable and effective.".</p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -414,59 +403,74 @@ if ($_GET['pass'] == 1) {
 
 
         <div class="feedback-container">
-            <h2>Why people choose Infinity for their career</h2>
+            <h2>Why People Choose Infinity For Their Career</h2>
             <div class="grid">
 
                 <div class="card">
                     <div class="flex-center">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <img src="https://i.pinimg.com/564x/37/41/09/37410992b40c6df7ca8ac0590219393e.jpg"
                             alt="Felipe M.">
                         <div>
-                            <h3>Felipe M.</h3>
-                            <p class="meta">Learner since 2018</p>
+                            <h3>Abdul Fattah</h3>
+                            <p class="meta">Learner since 2021</p>
                         </div>
                     </div>
-                    <p class="text">"To be able to take courses at my own pace and rhythm has been an amazing
-                        experience. I can learn whenever it fits my schedule and mood."</p>
+                    <details>
+                        <summary>"TYour e-learning platform has completely transformed my approach to online education.
+                            The courses are well-structured, engaging, and incredibly informative. </summary>
+                        <p>Thank you for providing such a valuable resource!"
+
+                            "</p>
+                    </details>
                 </div>
 
                 <div class="card">
                     <div class="flex-center">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Felipe M.">
+                        <img src="https://i.pinimg.com/736x/70/5e/d1/705ed1090f270ed99c90b2d312bd34bd.jpg">
                         <div>
-                            <h3>Felipe M.</h3>
-                            <p class="meta">Learner since 2018</p>
+                            <h3>Naimul Islam</h3>
+                            <p class="meta">Learner since 2023</p>
                         </div>
                     </div>
-                    <p class="text">"To be able to take courses at my own pace and rhythm has been an amazing
-                        experience. I can learn whenever it fits my schedule and mood."</p>
+                    <details>
+                        <summary>"I am thoroughly impressed with the quality of content on your e-learning website. The
+                            user-friendly interface and diverse course offerings make learning enjoyable</summary>
+                        <p>and effective. Keep up the great work!""</p>
+                    </details>
                 </div>
 
                 <div class="card">
                     <div class="flex-center">
-                        <img src="https://plus.unsplash.com/premium_photo-1661766386981-1140b7b37193?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <img src="https://i.pinimg.com/736x/1e/97/9a/1e979ac127d600837d47795dd53ca9df.jpg"
                             alt="Felipe M.">
                         <div>
-                            <h3>Felipe M.</h3>
-                            <p class="meta">Learner since 2018</p>
+                            <h3>Sajal Bhuiyan</h3>
+                            <p class="meta">Learner since 2024</p>
                         </div>
                     </div>
-                    <p class="text">"To be able to take courses at my own pace and rhythm has been an amazing
-                        experience. I can learn whenever it fits my schedule and mood."</p>
+                    <details>
+                        <summary>"Your e-learning website stands out for its exceptional educational content and
+                            seamless user experience. The courses are comprehensive </summary>
+                        <p>Thank you for making learning accessible and enjoyable!"</p>
+                    </details>
+
                 </div>
 
                 <div class="card">
                     <div class="flex-center">
-                        <img src="https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D"
+                        <img src="https://i.pinimg.com/564x/36/e5/d6/36e5d6fa800c912adfc980fb57f49934.jpg"
                             alt="Felipe M.">
                         <div>
-                            <h3>Felipe M.</h3>
+                            <h3>Shahriar Mustak</h3>
                             <p class="meta">Learner since 2018</p>
                         </div>
                     </div>
-                    <p class="text">"To be able to take courses at my own pace and rhythm has been an amazing
-                        experience. I can learn whenever it fits my schedule and mood."</p>
+                    <details>
+                        <summary>"This e-learning site is a game-changer! The interactive lessons and expert
+                            instructors have helped me gain new skills and confidence in my field.</summary>
+                        <p>I highly recommend this
+                            platform to anyone looking to enhance their knowledge."</p>
+                    </details>
                 </div>
 
             </div>
@@ -517,6 +521,15 @@ if ($_GET['pass'] == 1) {
         </div>
         <div class="footer-section footer-right">
             <button>English</button>
+            <ul class="contact-link">
+                <li><a href="https://github.com/Arafahmed1314" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/Araf1314/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/md-naimul-islam-068b9018b/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+
+            </ul>
             <p>&copy; 2024 Infinity, Inc.</p>
         </div>
     </footer>

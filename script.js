@@ -92,18 +92,3 @@ themeToggle.forEach((theme) => {
     document.body.classList.toggle("dark-mode");
   });
 });
-
-// const themeToggle = document.querySelectorAll(".theme-toggle");
-
-// if (themeToggle) {
-//   themeToggle.addEventListener("click", () => {
-//     document.body.classList.toggle("light-mode");
-//     document.body.classList.toggle("dark-mode");
-//     document
-//       .querySelectorAll(".profile-card, .content-card")
-//       .forEach((card) => {
-//         card.classList.toggle("light-mode");
-//         card.classList.toggle("dark-mode");
-//       });
-//   });
-// }
