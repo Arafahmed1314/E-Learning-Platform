@@ -18,7 +18,7 @@ var swiper = new Swiper(".slide-content", {
     0: {
       slidesPerView: 1,
     },
-    520: {
+    720: {
       slidesPerView: 2,
     },
     950: {
@@ -77,18 +77,17 @@ if (profileBtn && profilePopup) {
     profilePopup.classList.add("active");
   });
 
-  profilePopup.addEventListener("mouseenter", () => {
-    profilePopup.classList.add("active");
-  });
+  // profilePopup.addEventListener("mouseenter", () => {
+  //   profilePopup.classList.add("active");
+  // });
 
   profilePopup.addEventListener("mouseleave", () => {
     profilePopup.classList.remove("active");
   });
 }
-const themeToggle = document.querySelectorAll(".theme-toggle");
-themeToggle.forEach((theme) => {
-  theme.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-    document.body.classList.toggle("dark-mode");
-  });
+const themeToggle = document.querySelector(".theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  document.body.classList.toggle("dark-mode");
 });

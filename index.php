@@ -124,16 +124,16 @@ if ($_GET['pass'] == 1) {
                         <a href="https://youtu.be/L9X7XXfHYdU?si=7W5evXgLdtUUWkTb" target="_blank">Computer Arch</a>
                     </div>
                 </div>
-                <li><a href="#course">Courses</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#footer">Contact us</a></li>
                 <li>
                     <a href="#" class="login-btn">LOG IN</a>
                     <a href="profile.php" class="profile-btn">Profile</a>
                     <div class="profile-popup-container">
                         <div class="box">
-                            <button>Hackos: 2054</button>
+                            <button>Infinity: 2054</button>
                         </div>
-                        <div class="box">Profile</div>
+                        <div class="box"><a href="profile.php">Profile</a></div>
                         <div class="box boxs">
                             <div class="part">Dark Mode</div>
                             <label class="toggle-switch">
@@ -141,11 +141,12 @@ if ($_GET['pass'] == 1) {
                                 <span class="slider"></span>
                             </label>
                         </div>
-                        <div class="box">Leaderboard</div>
-                        <div class="box">Settings</div>
-                        <div class="box">Bookmarks</div>
-                        <div class="box">Submissions</div>
-                        <div class="box">Logout</div>
+                        <ul><a href="" class="box">Leaderboard</a></ul>
+                        <ul><a href="courses.php" class="box">My Courses</a></ul>
+                        <ul><a href="" class="box">Bookmarks</a></ul>
+                        <ul><a href="" class="box">Submissions</a></ul>
+                        <ul><a href="index.php" class="box">Logout</a></ul>
+
                     </div>
                 </li>
             </ul>
@@ -226,9 +227,11 @@ if ($_GET['pass'] == 1) {
             <div class="container">
                 <div class="banner-inner">
                     <h1>No application needed, ever―just start learning and show us you’re ready</h1>
-                    <p>You need to get a house when you go to campus, you have to pay for food. If you do it online, you
-                        can do it from your home. I was able to complete the degree while working full-time as a game
-                        designer.</p>
+                    <p>Together, Let's transform aspirations into
+                        achievements, challenges into opportunities, and dreams into realities.
+                        Together, we will pave the way for a brighter tomorrow, let's
+                        create a legacy of learning that transcends generations reach new heights of academic excellence
+                    </p>
                     <button class="btn">
                         Get Started<i class="bx bx-right-arrow-alt"></i>
                     </button>
@@ -244,9 +247,8 @@ if ($_GET['pass'] == 1) {
         <div class="overview-container">
             <h1>Invest in your varsity life with Infinity</h1>
             <p class="overview_first_para">Get access to videos in over 90%
-                of courses, Specializations,
-                and Professional Certificates taught by top instructors from
-                leading universities and companies.</p>
+                of courses, Specializations, and get pass mark of your exam
+            </p>
             <div class="overview-inner-container">
                 <div class="overview-wrapper">
                     <div class="overview-card">
@@ -345,7 +347,7 @@ if ($_GET['pass'] == 1) {
                         <div class="card-content">
                             <h2 class="name">CHEMISTRY</h2>
                             <p class="description">The Chemistry course on this e-learning platform makes complex
-                                concepts easy to understand with clear lessons and practical examples.</p>
+                                concepts easy to understand </p>
                             <button class="button">View More</button>
                         </div>
                     </div>
@@ -403,7 +405,7 @@ if ($_GET['pass'] == 1) {
 
 
         <div class="feedback-container">
-            <h2>Why People Choose Infinity For Their Career</h2>
+            <h2>Why Student Choose Infinity For Their Study Plan</h2>
             <div class="grid">
 
                 <div class="card">
@@ -416,7 +418,7 @@ if ($_GET['pass'] == 1) {
                         </div>
                     </div>
                     <details>
-                        <summary>"TYour e-learning platform has completely transformed my approach to online education.
+                        <summary>"Your e-learning platform has completely transformed my approach to online education.
                             The courses are well-structured, engaging, and incredibly informative. </summary>
                         <p>Thank you for providing such a valuable resource!"
 
@@ -482,16 +484,16 @@ if ($_GET['pass'] == 1) {
         <img src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg" alt="Instructor Image">
 
         <div class="instructor-text">
-            <h2>Become an instructor</h2>
-            <p>Instructors from around the world teach millions of learners on Infinity. We provide the tools and skills
+            <h2>Save Your Makeup Money</h2>
+            <p>We are exited to learn things before the exam . We provide the tools and skills
                 to
                 teach what you love.</p>
-            <button>Start teaching today</button>
+            <button>Learning From today</button>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-section">
             <h3>Infinity EdTech</h3>
             <ul>

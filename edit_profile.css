@@ -1,195 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: #ffffff; */
-    background-color: transparent;
-    min-height: 100vh;
+    color: #333;
 }
 
-.registration-form{
-    width: 650px;
-    margin: 0;
-    background-color: purple;
-background-color: #1c3855;
-/* background-color: transparent; */
-color: white;
-border-radius: 10px;
-padding: 30px 40px;
-backdrop-filter: blur(100px);
-box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
-border: 2px solid grey;
-margin-top: 30px;
-margin-bottom: 50px;
-
-}
-.registration-form .name{
-    display: flex;
-    gap: 2rem;
-
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.registration-form h1{
-    font-size: 42px;
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
     text-align: center;
-
 }
 
-.registration-form .input{
-    width: 100%;
-    height: 50px;
-    /* background-color: salmon; */
-    margin: 20px 0;
-    position: relative;
-}
-.input input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 40px;
-font-size: 16px;
-color: white;
-padding: 20px 45px 20px 20px;
-}
-.area{
-    width: 100%;
-    height: 50px;
-    /* background-color: salmon; */
-    margin: 30px 0;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.area textarea{
+.content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 70px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-border-radius: 20px;
-font-size: 16px;
-color: white;
-padding: 20px 45px 20px 20px;
-resize: none;
-margin: 30px 0;
+    flex-direction: row;
+    padding: 20px;
 }
 
-
-.input i{
-    position: absolute;
-    right: 20px;
-top: 16px;
-    font-size: 20px;
-}
-
-.registration-form .register-link{
-    font-size: 15px ;
+.profile-section {
+    flex: 1;
     text-align: center;
-    margin-top: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
 }
-.register-link p a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+
+.profile-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
 }
-.registration-form p a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+
+.profile-section input[type="file"] {
+    display: none;
 }
-.register-link p a:hover{
-    text-decoration: underline;
-}
-.gender-option{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-.gender-option button{
+
+.profile-section label {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
     padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: transparent;
-    font-size: 19px;
-    box-shadow:inset 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
-.gender label{
-    cursor: pointer;
-    color: white;
+
+.profile-section label:hover {
+    background-color: #0056b3;
 }
-.registration-form i{
-    color: grey;
+
+.form-section {
+    flex: 2;
+    padding-left: 20px;
 }
-.gender-box h2{
-    /* font-size: 27px; */
-    color: grey;
-    padding-left: 12px;
-}
-.nationality-religion{
+
+.form-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-top: 33px;
-    margin-bottom: 33px;
-    width: 90%;
-    /* margin: 0 auto; */
-}
-.nationality-religion h2{
-    color: grey;
-    margin: 12px;
-}
-.nationality-religion select{
-padding: 8px;
-font-size: 18px;
-border-radius: 15px;
-border: none;
-outline: none;
-background-color: transparent;
-box-shadow: 0 5px 5px  rgba(0,0,0,0.50), 0 5px 4px rgba(0,0,0,0.16);
-color: white;
-}
-.religion{
-    display: flex;
-    justify-content: space-between;
-}
-.nationality-religion option{
-font-size: 23px;
-color: black;
-background-color: transparent;
-
+    margin-bottom: 15px;
 }
 
-
-.registration-form .buttons{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    padding-right: 100px;
-
-}
-.registration-form .btn{
-    background-color: transparent;
-    padding: 10px 20px;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
+.form-group label {
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.button-group {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.button-group input[type="button"],
+.button-group input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-group input[type="button"] {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.button-group input[type="button"]:hover {
+    background-color: #c9302c;
+}
+
+.button-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.tabs {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tabs button {
+    background: none;
+    border: none;
+    color: #007bff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabs button.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+
+.tabs button:not(.active):hover {
+    color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
 }

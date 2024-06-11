@@ -6,13 +6,13 @@ body {
 }
 
 .dark-mode {
-    background-color: #ffffff;
-    color: #1e293b;
+    background-color: #1e293b;
+    color: #ffffff;
 }
 
 .light-mode {
-    background-color: #1e293b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #1e293b;
 }
 
 .container {
@@ -27,29 +27,29 @@ body {
     align-items: center;
     margin-bottom: 20px;
 }
-.header-btn{
+
+.header-btn {
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
     gap: 15px;
 }
-@media  only screen and (max-width: 600px) {
-    .header-btn{
-       flex-direction: column;
+
+@media only screen and (max-width: 600px) {
+    .header-btn {
+        flex-direction: column;
     }
 }
-
 
 .header h1 {
     font-size: 2rem;
     font-weight: bold;
 }
-.text-center h2{
+
+.text-center h2 {
     font-size: 3rem;
     letter-spacing: 8px;
 }
 
-.theme-toggle , .theme-toggle a {
+.theme-toggle, .theme-toggle a {
     background-color: #4a5568;
     color: white;
     padding: 0.5rem 1.4rem;
@@ -57,16 +57,34 @@ body {
     border-radius: 0.25rem;
     cursor: pointer;
     font-size: 17px;
-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     text-decoration: none;
 }
 
-.theme-toggle:hover , .theme-toggle a:hover {
+.theme-toggle:hover, .theme-toggle a:hover {
     background-color: #112343;
 }
+
 .main-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden; /* Hide any overflow beyond the viewport */
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 40%;
+    margin-right: 1rem;
+    overflow-y: auto; /* Enable vertical scrolling */
+    flex-shrink: 0; /* Prevent the profile card from shrinking */
+}
+
+.content-section {
+    flex-grow: 1;
+
+
+    overflow: hidden; /* Hide any overflow */
 }
 
 .profile-card, .content-card {
@@ -85,20 +103,6 @@ transition: all 0.5s ease;
     background-color: #f8fafc;
 }
 
-
-.profile-card {
-    width: 100%;
-    max-width: 40%;
-    margin-right: 1rem;
-
-}
-@media  only screen and (max-width: 920px) {
-    .profile-card {
-       max-width: 100%;
-       margin: auto;
-    }
-}
-
 .text-center {
     text-align: center;
 }
@@ -112,6 +116,7 @@ transition: all 0.5s ease;
     color: #a0aec0;
     font-size: 1rem;
 }
+
 .edit-profile {
     margin-top: 1rem;
     background-color: #112343;
@@ -124,7 +129,8 @@ transition: all 0.5s ease;
     cursor: pointer;
     transition: all 0.5s;
 }
-.edit-profile:hover{
+
+.edit-profile:hover {
     background-color: rgb(12, 93, 84);
 }
 
@@ -142,8 +148,8 @@ transition: all 0.5s ease;
     width: 20px;
     height: 20px;
     margin-right: 0.5rem;
-  background-color: #2d3748;
-  border-radius: 50%;
+    background-color: #2d3748;
+    border-radius: 50%;
 }
 
 .badges {
@@ -176,15 +182,11 @@ transition: all 0.5s ease;
     color: #a0aec0;
 }
 
-.content-section {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-.content-card h2{
+.content-card h2 {
     font-size: 2rem;
 }
-.content-card, .badges-section{
+
+.content-card, .badges-section {
     width: 100%;
 }
 
@@ -193,18 +195,12 @@ transition: all 0.5s ease;
     font-weight: bold;
 }
 
-.global-ranking, .attended, .total-problems, .difficulty-title, .difficulty-count {
+.global-ranking, .attended {
     font-size: 0.875rem;
     color: #a0aec0;
 }
 
-.solved-problems-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.solved-problems, .badges-section {
+.badges-section {
     width: 100%;
-    max-width: 49%;
     margin-bottom: 1rem;
 }

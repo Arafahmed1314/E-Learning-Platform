@@ -47,7 +47,7 @@ if ($result->num_rows > 0) {
         <div class="main-content">
             <div class="profile-card">
                 <div class="text-center">
-                    <img class="profile-picture" src="images/afak.jpg" alt="Profile Picture">
+                    <img class="profile-picture" src="images/logo.jpg" alt="Profile Picture">
                     <h2><?php echo "$username" ?></h2>
                     <p class="username"><?php echo "$username _" ?><?php echo (rand(1000, 10)); ?></p>
 
@@ -61,15 +61,17 @@ if ($result->num_rows > 0) {
                             src="https://img.icons8.com/material-outlined/24/ffffff/university.png" alt>GREEN UNIVERSITY
                         OF BANGLADESH</p>
                     <p class="detail-item"><img class="icon"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/university.png" alt>Current Semester
-                        :
-                        6th</p>
+                            src="https://img.icons8.com/material-outlined/24/ffffff/graduation-cap.png" alt>Current
+                        Semester : 6th
+                    </p>
+
                     <p class="detail-item"><img class="icon"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/university.png" alt>Department : CSE
+                            src="https://img.icons8.com/material-outlined/24/ffffff/department.png" alt>Department : CSE
                     </p>
                     <p class="detail-item"><img class="icon"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/university.png" alt>Batch : 221
+                            src="https://img.icons8.com/material-outlined/24/ffffff/box.png" alt>Batch : 221
                     </p>
+
                     <p class="detail-item"><img class="icon"
                             src="https://img.icons8.com/material-outlined/24/ffffff/address.png" alt>Permanent
                         Address : Cumilla, Bangladesh</p>
@@ -83,11 +85,12 @@ if ($result->num_rows > 0) {
                             src="https://img.icons8.com/material-outlined/24/ffffff/date.png" alt>Birth-date :
                         01/01/2002</p>
                     <p class="detail-item"><img class="icon"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/man.png" alt>Gender :
-                        Male</p>
+                            src="https://img.icons8.com/material-outlined/24/ffffff/date.png" alt>Gender : Male
+                    </p>
+
                     <p class="detail-item"><img class="icon"
-                            src="https://img.icons8.com/material-outlined/24/ffffff/religion.png" alt>Religion :
-                        Islam</p>
+                            src="https://img.icons8.com/material-outlined/24/ffffff/book.png" alt>Religion : Islam
+                    </p>
                     <p class="detail-item"><img class="icon"
                             src="https://img.icons8.com/material-outlined/24/ffffff/email.png"
                             alt><?php echo "$email" ?></p>
@@ -127,38 +130,31 @@ if ($result->num_rows > 0) {
                         <p class="attended">Attended: 3</p>
                     </div>
                 </div>
-                <div class="solved-problems-section">
-                    <div class="content-card solved-problems">
-                        <h2>Solved Problems</h2>
-                        <div class="text-center">
-                            <p class="solved-total"><?php echo (rand(1000, 0)); ?></p>
-                            <p class="total-problems">of 3156</p>
 
-                        </div>
+
+                <!-- Badges -->
+                <div class="content-card badges-section">
+                    <h2>Badges</h2>
+                    <div class="badges-display">
+                        <img class="badge" src="images/logo.jpg" alt="Badge 1" width="90px">
+                        <img class="badge" src="images/logo.jpg" alt="Badge 2" width="90px">
                     </div>
-                    <!-- Badges -->
-                    <div class="content-card badges-section">
-                        <h2>Badges</h2>
-                        <div class="badges-display">
-                            <img class="badge" src="https://via.placeholder.com/50" alt="Badge 1">
-                            <img class="badge" src="https://via.placeholder.com/50" alt="Badge 2">
-                        </div>
-                        <p class="recent-badge-label">Most Recent Badge</p>
-                        <p class="recent-badge">50 Days Badge 2024</p>
-                    </div>
+                    <p class="recent-badge-label">Most Recent Badge</p>
+                    <p class="recent-badge">50 Days Badge 2024</p>
                 </div>
+
                 <!-- Recent Submissions -->
 
             </div>
         </div>
     </div>
     <script>
-    const themeToggle = document.querySelector(".theme-toggle");
+        const themeToggle = document.querySelector(".theme-toggle");
 
-    themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-        document.body.classList.toggle("dark-mode");
-    });
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+            document.body.classList.toggle("dark-mode");
+        });
     </script>
 </body>
 

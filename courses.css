@@ -1,0 +1,203 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+/* Navbar animation */
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navbar {
+    animation: slideInDown 0.5s ease; /* Apply animation */
+}
+
+.nav-img {
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff; /* Light mode background color */
+    color: #000000; /* Light mode text color */
+    padding: 0 20px;
+}
+
+/* Night mode toggle styling */
+#night-mode-toggle {
+    color: #000000; /* Light mode toggle text color */
+}
+
+
+
+/* Sidebar and Main Content Styling */
+.sidebar, .right-sidebar {
+    position: fixed;
+    top: 70px; /* Adjust based on navbar height */
+    bottom: 0;
+    overflow-y: auto;
+    padding-top: 10px;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh; /* Full height sidebar */
+    top: 70px; /* Adjust based on navbar height */
+}
+
+.sidebar-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.navbar-nav li a{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Smooth edges */
+}
+.navbar-nav li a:hover{
+    color: #0056b3; /* Darker blue on hover */
+    background-color: #e9ecef; /* Light grey background on hover */
+}
+.nav.flex-column .nav-item .nav-link {
+    color: #007bff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Smooth edges */
+}
+
+.nav.flex-column .nav-item .nav-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    background-color: #e9ecef; /* Light grey background on hover */
+}
+
+.nav.flex-column .nav-item .nav-link.active {
+    color: #fff;
+    background-color: #007bff; /* Active link background */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 767.98px) {
+    .sidebar, .right-sidebar {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .main-content {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+.sidebar {
+    left: 0;
+}
+
+.right-sidebar {
+    right: 0;
+}
+
+.main-content {
+    margin-top: 70px; /* Adjust based on navbar height */
+    margin-left: 16.7%; /* Adjust based on sidebar width */
+    margin-right: 20%; /* Adjust based on right sidebar width */
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+    height: calc(100vh - 70px); /* Adjust based on navbar height */
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.dark-mode .navbar,
+.dark-mode .sidebar-heading,
+.dark-mode .sidebar,
+.dark-mode .right-sidebar {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+/* Course Content Styling */
+.course-content {
+    display: none;
+}
+
+.course-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.card-body button {
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.card {
+    margin: 0 auto;
+    gap: 10px;
+}
+
+/* Image Styling */
+.img-fluid {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Course Heading Styling */
+.course-heading.active {
+    display: block;
+}
+
+/* Video Content Styling */
+.video-content {
+    display: flex;
+    flex-wrap: wrap;
+}
